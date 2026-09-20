@@ -5,10 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="icon" href="./src/assets/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header wrapper">
-    <div class="logo"></div>
+    <div class="header-logo"></div>
     <nav class="header-nav">
       <ul class="header-nav__list">
         <li><a class="header-nav__link" href="#favorite">Favorite coffee</a></li>
@@ -25,13 +29,13 @@
   <main class="wrapper">
     <section class="hero">
       <div class="offer">
-        <h1>Enjoy premium coffee at our charming cafe</h1>
+        <h1><span class="accent">Enjoy</span> premium coffee at our charming cafe</h1>
         <p>With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
-        <button>Menu</button>
+        <button class="button primary">Menu</button>
       </div>
     </section>
     <section class="favorite-coffee">
-      <h2>Choose your favorite coffee</h2>
+      <h2>Choose your <span class="accent">favorite</span> coffee</h2>
       <div class="slider">
         <div class="action__previos"></div>
         <div class="card">
@@ -49,7 +53,7 @@
       </div>
     </section>
     <section class="about">
-      <h2>Resource is the perfect and cozy place where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.</h2>
+      <h2>Resource is <span class="accent">the perfect and cozy place</span> where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.</h2>
       <div class="grid-container">
         <div class="grid-img__one"></div>
         <div class="grid-img__two"></div>
@@ -59,7 +63,7 @@
     </section>
     <section class="mobile-app">
       <div class="mobile-content">
-        <h2>Download our app to start ordering</h2>
+        <h2><span class="accent">Download</span> our app to start ordering</h2>
         <p>Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever you are</p>
         <ul class="app-store-links">
           <li class="app-store-links">App store</li>
@@ -71,7 +75,7 @@
   </main>
   <footer class="footer wrapper">
     <div class="header-content">
-      <h2>Sip, Savor, Smile. It’s coffee time!</h2>
+      <h2>Sip, Savor, Smile. <span class="accent">It’s coffee time!</span></h2>
       <ul class="social-links">
         <li class="social-link"><div class="x"></div></li>
         <li class="social-link"><div class="instagram"></div></li>

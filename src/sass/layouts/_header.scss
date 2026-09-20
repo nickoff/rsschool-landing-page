@@ -1,0 +1,18 @@
+@use '../abstracts/globals' as *;
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.header-logo {
+  display: flex;
+  width: 100px;
+  height: 60px;
+  background-image: url(/src/assets/img/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
