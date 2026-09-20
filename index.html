@@ -26,7 +26,7 @@
       <div class="menu"></div>
     </div>
   </header>
-  <main class="wrapper">
+  <main class="wrapper main">
     <section class="hero">
       <div class="offer">
         <h1><span class="accent">Enjoy</span> premium coffee at our charming cafe</h1>
@@ -34,20 +34,30 @@
         <button class="button primary">Menu</button>
       </div>
     </section>
-    <section class="favorite-coffee">
+    <section class="favorite" id="favorite">
       <h2>Choose your <span class="accent">favorite</span> coffee</h2>
       <div class="slider">
-        <div class="action__previos"></div>
+        <button class="slider-action">
+          <svg class="arrow previous" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 12H18.5M12.5 18L18.5 12L12.5 6" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
         <div class="card">
-          <div class="card__img"></div>
-          <h3 class="card__title">S’mores Frappuccino</h3>
-          <p class="card__descriprion">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
-          <h3 class="card__price">$5.50</h3>
+          <img alt="card image" class="card__img" src="/src/assets/img/coffee-slider-1.png"></img>
+          <div class="card__content">
+            <h3 class="card__title">S’mores Frappuccino</h3>
+            <p class="card__descriprion">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
+            <h3 class="card__price">$5.50</h3>
+          </div>
         </div>
-        <div class="action__next"></div>
+        <button class="slider-action next">
+          <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 12H18.5M12.5 18L18.5 12L12.5 6" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
       </div>
       <div class="controls">
-        <span></span>
+        <span class="active"></span>
         <span></span>
         <span></span>
       </div>

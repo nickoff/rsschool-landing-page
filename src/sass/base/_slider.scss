@@ -1,0 +1,61 @@
+@use '../abstracts/globals' as *;
+
+.slider{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.slider-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: $btn-primary;
+  border-radius: 100px;
+  cursor: pointer;
+  border: 1px solid #665F55;
+
+  .arrow {
+    path {
+      stroke: $text-color;
+    }
+  }
+
+  &:hover {
+    background-color: #665F55;
+    border: 0;
+    transition: all 0.5s ease;
+
+    .arrow {
+      path {
+        stroke: $text-inverse;
+      }
+    }
+  }
+}
+
+.previous {
+  transform: rotate(180deg);
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+
+  span {
+    display: block;
+    width: 40px;
+    height: 4px;
+    opacity: 1;
+    border-radius: 100px;
+    background: #C1B6AD;
+    cursor: pointer;
+
+    &.active {
+      background: #665F55;
+    }
+  }
+}
