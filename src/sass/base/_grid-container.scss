@@ -24,5 +24,12 @@
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+
+    &:hover {
+      transform: scale(0.9);
+      transition: all 0.3s ease;
+    }
   }
 }
