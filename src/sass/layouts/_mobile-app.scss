@@ -1,0 +1,70 @@
+@use '../abstracts/globals' as *;
+
+.mobile-app {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  &__img img {
+    display: block;
+    max-width: 630px;
+    object-fit: cover;
+  }
+}
+
+.mobile-content {
+  display: flex;
+  max-width: 630px;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.app-store-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.app-store-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  width: 200px;
+  padding: 12px 20px;
+  border: 1px solid #665F55;
+  border-radius: 100px;
+  gap: 8px;
+  cursor: pointer;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-weight: 600;
+
+    span {
+      font-size: 1rem;
+      line-height: 140%;
+    }
+  }
+
+  &:hover {
+    border: 0px;
+    background-color: #665F55;
+    color: $text-inverse;
+    transition: all 0.3s ease;
+
+    svg path{
+      fill: $text-inverse;
+      transition: all 0.3s ease;
+    }
+  }
+
+  svg path{
+    fill: $text-color;
+  }
+}
