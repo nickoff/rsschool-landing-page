@@ -1,0 +1,8 @@
+@use '../abstracts/globals' as *;
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}

@@ -1,0 +1,24 @@
+@use '../abstracts/globals' as *;
+
+.header-nav {
+  &__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 55px;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-style: normal;
+    color: $text-color;
+    font-weight: 600;
+    line-height: 150%;
+  }
+
+  &__link:hover {
+    transition: color 0.3s ease-in-out;
+  }
+}
