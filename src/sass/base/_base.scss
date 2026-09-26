@@ -55,6 +55,9 @@ span.accent {
 }
 
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 200px;
   height: 64px;
   background-color: $btn-primary;

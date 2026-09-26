@@ -40,8 +40,12 @@ module.exports = {
       filename: './index.html',
       minify: false,
     }
-  ),
-  new MiniCssExtractPlugin({
+    ),
+    new HtmlWebpackPlugin({
+      template: './menu/index.html',
+      filename: 'menu/index.html',
+    }),
+    new MiniCssExtractPlugin({
       filename: 'style.css',
     }),
 ],
