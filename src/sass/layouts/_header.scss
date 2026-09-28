@@ -9,12 +9,14 @@
 }
 
 .header-logo {
+  position: relative;
   display: flex;
   width: 100px;
   height: 60px;
   background-image: url(/src/assets/img/logo.png);
   background-size: contain;
   background-repeat: no-repeat;
+  z-index: 3;
 }
 
 .menu {
@@ -38,9 +40,66 @@
       transform-origin: center;
       transition: transform 0.3s ease;
     }
+  }
 
-    &:hover::after {
+  @media (hover: hover) and (pointer: fine) {
+    a:hover::after {
       transform: scaleX(1);
+    }
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.burger {
+  display: none;
+
+  @media (max-width: 768px) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 100px;
+    border: solid 1px #665F55;
+    cursor: pointer;
+    background-color: $btn-primary;
+    z-index: 2;
+
+    span {
+      width: 16px;
+      height: 2px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      background-color: #403F3D;
+      transition: 0.5s;
+
+      &:nth-of-type(1) {
+        top: 16px;
+      }
+
+      &:nth-of-type(2) {
+        top: 24px;
+      }
+    }
+
+    &.active {
+      span {
+        &:nth-of-type(1) {
+          top: 20px;
+          transform: translateX(-50%) rotate(45deg);
+        }
+
+        &:nth-of-type(2) {
+          top: 20px;
+          transform: translateX(-50%) rotate(-45deg);
+        }
+      }
     }
   }
 }
