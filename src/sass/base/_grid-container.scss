@@ -1,0 +1,55 @@
+@use '../abstracts/globals' as *;
+
+.grid-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+
+  &__left {
+    display: grid;
+    gap: 40px;
+    grid-template-rows: 590px 430px;
+  }
+
+  &__right {
+    display: grid;
+    gap: 40px;
+    grid-template-rows: 430px 590px;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+
+    &__left {
+      grid-template-rows: 590px;
+    }
+
+    &__left > :nth-child(2) {
+      display: none;
+    }
+
+    &__right {
+      grid-template-rows: 590px;
+    }
+
+    &__right > :first-child {
+      display: none;
+    }
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+
+    &:hover {
+      transform: scale(0.9);
+      transition: all 0.3s ease;
+    }
+  }
+}

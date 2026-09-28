@@ -1,0 +1,46 @@
+@use '../abstracts/globals' as *;
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.header-logo {
+  display: flex;
+  width: 100px;
+  height: 60px;
+  background-image: url(/src/assets/img/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.menu {
+  a {
+    width: 72px;
+    height: fit-content;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+
+      width: 100%;
+      height: 2px;
+
+      background-color: currentColor;
+
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+    }
+  }
+}
