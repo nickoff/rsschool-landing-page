@@ -58,6 +58,7 @@ span.accent {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 8px; 
   width: 200px;
   height: 64px;
   background-color: $btn-primary;
@@ -69,5 +70,6 @@ span.accent {
   font-weight: 600;
   line-height: 150%;
   letter-spacing: 0%;
+  text-decoration: none;
   cursor: pointer;
 }
